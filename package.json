@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://JzSol.github.io/lasmata-todoapp",
+  "homepage": "https://jzsol.github.io/todo_frontend",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",

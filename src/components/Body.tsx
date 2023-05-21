@@ -2,7 +2,7 @@ import { useState } from 'react';
 import '../styles/Body.scss';
 import { TaskList } from './TaskList';
 import { Todo } from '../types/todo';
-// import { addTodo } from '../api/methods';
+import { addTodo } from '../api/methods';
 import { EditComp } from './EditComp';
 
 type Props = {
@@ -32,15 +32,15 @@ export const Body: React.FC<Props> = () => {
       return;
     }
 
-    // const newTodo = await addTodo(title);
-    // setTodos((prevTodos) => [...prevTodos, newTodo]);
-    // try {
-    //   setQuery('');
-    //   setDeadline('');
-    //   setWarning('');
-    // } catch (error) {
-    //   console.log(error);
-    // }
+    const newTodo = await addTodo(title, deadline);
+    setTodos((prevTodos) => [...prevTodos, newTodo]);
+    try {
+      setQuery('');
+      setDeadline('');
+      setWarning('');
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
