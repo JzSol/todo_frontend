@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/lasmata-todoapp/static/css/main.32f62bb3.css",
+    "main.js": "/lasmata-todoapp/static/js/main.b7850662.js",
+    "index.html": "/lasmata-todoapp/index.html",
+    "main.32f62bb3.css.map": "/lasmata-todoapp/static/css/main.32f62bb3.css.map",
+    "main.b7850662.js.map": "/lasmata-todoapp/static/js/main.b7850662.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32f62bb3.css",
+    "static/js/main.b7850662.js"
+  ]
+}
