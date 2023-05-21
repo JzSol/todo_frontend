@@ -1,0 +1,14 @@
+.header {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #272727;
+
+  &-text {
+    text-transform: uppercase;
+    font-family: 'Helvetica';
+    font-size: 36px;
+
+    color: #ffffff;
+  }
+}

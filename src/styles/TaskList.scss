@@ -1,0 +1,129 @@
+.list {
+  margin-top: 33px;
+  height: 430px;
+}
+
+.item {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.checkbox {
+  display: none;
+}
+
+.custom-checkbox {
+  position: relative;
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  background: #6a6a6a;
+  border-radius: 9px;
+  margin-left: 19px;
+
+  transition: background 0.3s ease;
+  &:hover {
+    background: lighten(#6a6a6a, 20%);
+  }
+
+  &.active::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 7px;
+    border: solid white;
+    border-width: 0 0 2px 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+}
+
+.title {
+  display: flex;
+  margin-left: 19px;
+  width: 203px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  color: #bcbcbc;
+
+  font-family: 'Helvetica';
+  font-weight: 400;
+  color: #bcbcbc;
+
+  transition: color 0.3s ease;
+
+  cursor: pointer;
+  &:hover {
+    color: lighten(#bcbcbc, 60%);
+  }
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.date {
+  margin-left: 23px;
+  font-size: 16px;
+  width: 63px;
+
+  font-family: 'Helvetica';
+  color: #737373;
+}
+
+.delete {
+  margin-left: 45px;
+  opacity: 0;
+}
+
+.delete {
+  + .custom-checkbox-delete {
+    position: absolute;
+    margin-left: 400px;
+    width: 32px;
+    height: 32px;
+    background: gray;
+    border-radius: 8px;
+    cursor: pointer;
+
+    // Add transition for smooth color change
+    transition: background 0.3s ease;
+
+    &:hover {
+      // Change background color on hover
+      background: lightgray;
+    }
+
+    &.active {
+      background: #b0463f;
+
+      &:hover {
+        // Make active state brighter on hover
+        background: #e05850;
+      }
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 16px;
+        height: 2px;
+        background-color: #fff;
+      }
+
+      &::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      &::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+    }
+  }
+}

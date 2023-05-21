@@ -1,0 +1,136 @@
+.box {
+  display: flex;
+  width: 438px;
+  height: 300px;
+  background: #ffffff;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.editBlock {
+  margin-top: 25px;
+  margin-left: 16px;
+}
+
+.created {
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-size: 20px;
+
+  color: #2f2f2f;
+}
+
+// .exitbtn {
+//   border: none;
+//   background-color: white;
+//   margin-left: 180px;
+//   width: 34px;
+//   height: 23px;
+//   left: 880px;
+//   top: 644px;
+
+//   font-family: 'Helvetica';
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 20px;
+//   line-height: 23px;
+
+//   cursor: pointer;
+//   color: #131313;
+//   transition: filter 0.4s ease;
+//   &:hover {
+//     transform: scale(1.1);
+//   }
+// }
+.exitbtn {
+  border: none;
+  background-color: white;
+  margin-left: 180px;
+  width: 34px;
+  height: 23px;
+  left: 880px;
+  top: 644px;
+
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+
+  cursor: pointer;
+  color: #131313;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.editTitle {
+  width: 405px;
+  height: 36px;
+  margin-top: 16px;
+
+  border: none;
+  background: #cbcbcb;
+  border-radius: 4px;
+  &::placeholder {
+    font-size: 10px;
+  }
+}
+
+.makeInfo {
+  display: flex;
+  width: 400px;
+  height: 100px;
+  left: 517px;
+  top: 760px;
+  border: none;
+  font-size: 20px;
+  font-family: 'Helvetica';
+  color: #272727;
+  margin-top: 16px;
+  background: #cbcbcb;
+  border-radius: 4px;
+  overflow: auto;
+
+  &::placeholder {
+    font-size: 17px;
+    padding-left: 150px;
+  }
+}
+
+.editDeadline {
+  margin-top: 25px;
+}
+
+.editDate {
+  width: 102px;
+  height: 18px;
+  left: 618px;
+  top: 920px;
+  margin-left: 21px;
+  border: none;
+
+  text-transform: uppercase;
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.saveBtn {
+  border: none;
+  background-color: white;
+
+  cursor: pointer;
+
+  font-family: 'Helvetica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: 80px;
+  color: green;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
