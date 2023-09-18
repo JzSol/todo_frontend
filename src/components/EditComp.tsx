@@ -36,7 +36,7 @@ export const EditComp: React.FC<Props> = ({
 
   let reverseFormat = '';
 
-  if (selectedTodo !== null) {
+  if (selectedTodo !== null && selectedTodo.timestamp) {
     const formatedTimestamp = selectedTodo.timestamp
       .replaceAll('-', '.')
       .slice(0, 10)

@@ -32,7 +32,7 @@ export const Body: React.FC<Props> = () => {
       return;
     }
 
-    const newTodo = await addTodo(title, deadline);
+    const newTodo = await addTodo(title, new Date(deadline));
     setTodos((prevTodos) => [...prevTodos, newTodo]);
     try {
       setQuery('');

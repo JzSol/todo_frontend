@@ -61,7 +61,7 @@ export const TaskList: React.FC<Props> = ({
         todos.map((todo) => {
           const format = todo.deadline
             .replaceAll('-', '.')
-            .slice(2)
+            .slice(0, 10)
             .split(' ')
             .reverse()
             .join(' ');
