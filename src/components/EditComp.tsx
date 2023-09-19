@@ -36,7 +36,7 @@ export const EditComp: React.FC<Props> = ({
 
   let reverseFormat = '';
 
-  if (selectedTodo !== null && selectedTodo.timestamp) {
+  if (selectedTodo !== null) {
     const formatedTimestamp = selectedTodo.timestamp
       .replaceAll('-', '.')
       .slice(0, 10)
@@ -82,7 +82,6 @@ export const EditComp: React.FC<Props> = ({
         });
     }
   };
-
   return (
     <div className='box'>
       <div className='editBlock'>

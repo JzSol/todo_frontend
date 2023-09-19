@@ -23,6 +23,7 @@ export const TaskList: React.FC<Props> = ({
   todos,
   setTodos,
   setIsEditing,
+  isEditing,
   setSelectedTodo,
 }) => {
   useEffect(() => {

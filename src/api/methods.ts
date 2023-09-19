@@ -5,7 +5,7 @@ axios.defaults.baseURL =
   'https://todo-backend-test-6fe63e1e5daa.herokuapp.com/';
 // axios.defaults.baseURL = 'https://localhost:8080/';
 
-export function wait(delay = 0) {
+export function wait(delay = 10) {
   return new Promise((resolve) => setTimeout(resolve, delay));
 }
 

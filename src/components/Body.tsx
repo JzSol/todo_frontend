@@ -22,12 +22,12 @@ export const Body: React.FC<Props> = () => {
   const [warning, setWarning] = useState('');
 
   const handleAddTodo = async (title: string, deadline: string) => {
-    if (title.length < 15) {
-      setWarning('Title must be at least 15 characters long');
+    if (title.length < 5) {
+      setWarning('Title must be at least 5 characters long');
       return;
     }
 
-    if (deadline.length < 6) {
+    if (deadline.length < 5) {
       setWarning('Deadline must be filled');
       return;
     }
@@ -42,6 +42,8 @@ export const Body: React.FC<Props> = () => {
       console.log(error);
     }
   };
+
+  // console.log('here, should be editing', selectedTodo);
 
   return (
     <body className='main'>
@@ -120,6 +122,8 @@ export const Body: React.FC<Props> = () => {
               setDeadline={setDeadline}
             />
           )}
+
+          {/* {isEditing && <h1 className='test'>Hello world</h1>} */}
         </div>
       </div>
     </body>
